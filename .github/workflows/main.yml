@@ -51,11 +51,11 @@ jobs:
           # Запуск скрипта авторизации на Docker Hub
           uses: docker/login-action@v1
           with:
-            username: <ваш_username_dockerhub>
-            password: <ваш_пароль_dockerhub>
+            username: exxxpo
+            password: nM93Ndb4oL83
         - name: Push to Docker Hub
           # Пуш образа в Docker_hub
           uses: docker/build-push-action@v2
           with:
             push: true
-            tags: exxxpo/workflow_hw:latest
+            tags: exxxpo/workflow_hw:v1.20.04.2023
