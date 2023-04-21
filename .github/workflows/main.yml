@@ -71,6 +71,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             sudo docker pull exxxpo/workflow_hw:latest
-            #остановка всех контейнеров11
+            #остановка всех контейнеров1111
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 exxxpo/workflow_hw
