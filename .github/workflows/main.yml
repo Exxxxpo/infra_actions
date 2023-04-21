@@ -70,7 +70,6 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            # Выполняет pull образа с Docker
             sudo docker pull exxxpo/workflow_hw
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
