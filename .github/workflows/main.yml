@@ -72,6 +72,6 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo docker pull exxxpo/workflow_hw:latest
-            #остановка всех контейнеров11112222
+            #stop all cont
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 exxxpo/workflow_hw
